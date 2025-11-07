@@ -177,6 +177,11 @@
             .btn-book { width: 100%; padding: 12px 20px; transform: none !important; min-width: 0; }
             .spacer-for-fixed-footer { height: 120px; display: block; }
         }
+
+        .list-group-numbered > .list-group-item::before {
+            content: none !important; /* hapus angka otomatis Bootstrap */
+        }
+
     </style>
 </head>
 <body>
@@ -203,7 +208,7 @@
                     <i class="bi bi-star-fill text-warning"></i>
                     <i class="bi bi-star-fill text-warning"></i>
                 </div>
-                <span class="fw-bold text-dark">(5.0)</span>
+                <span class="fw-bold text-dark">(5.0) (10K)</span>
             </div>
 
             <p class="lead text-secondary">
@@ -230,7 +235,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <ul>
-                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hotel bintang 4 (3 hari 2 malam)</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hotel bintang 5 (3 hari 2 malam)</li>
                         <li><i class="bi bi-check-circle-fill text-success me-2"></i>Transportasi antar-jemput bandara</li>
                         <li><i class="bi bi-check-circle-fill text-success me-2"></i>Tour Guide Profesional</li>
                     </ul>
@@ -245,7 +250,7 @@
             </div>
             
             <h4 class="mt-5 mb-3 fw-bold" style="color: var(--primary-luxora);">Itinerary Singkat</h4>
-            <ol class="list-group list-group-numbered">
+            <ol class="list-group list-group-numbered" style="list-style-type:none; counter-reset:none;">
                 <li class="list-group-item"><b>Hari 1:</b> Kedatangan di Sorong – Menuju Waisai – Check in Hotel</li>
                 <li class="list-group-item"><b>Hari 2:</b> Island Hopping ke Piaynemo, Telaga Bintang, dan Arborek (Full Day Trip)</li>
                 <li class="list-group-item"><b>Hari 3:</b> Snorkeling / Free Time – Check out – Kembali ke Bandara Sorong</li>
@@ -281,7 +286,7 @@
                     <form id="bookingForm">
                         <div class="mb-3">
                             <label for="namaPemesan" class="form-label fw-bold">Nama Lengkap Pemesan</label>
-                            <input type="text" class="form-control" id="namaPemesan" placeholder="Masukkan nama Anda (sesuai identitas)" required>
+                            <input type="text" class="form-control" id="namaPemesan" placeholder="Masukkan nama Anda (sesuai identitas)" required oninvalid="this.setCustomValidity('Tolong isi nama anda!')" oninput="this.setCustomValidity('') ">
                         </div>
 
                         <div class="row">

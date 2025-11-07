@@ -645,6 +645,31 @@
 .packages .packages-carousel .owl-nav .owl-next:hover i {
     color: var(--bs-white);
 }
+
+/* Pastikan semua card punya tinggi sama */
+.packages-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Isi konten fleksibel, agar tombol tetap di bawah */
+.packages-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* Deskripsi dibatasi agar tidak terlalu panjang */
+.packages-content p {
+    min-height: 80px; /* sesuaikan tinggi deskripsi agar seragam */
+}
+
+/* Tombol sejajar di bawah card */
+.packages-content .row.bg-primary {
+    margin-top: auto;
+}
 /*** Packages End ***/
 
 
