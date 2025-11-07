@@ -82,6 +82,7 @@
             }
         }
     });
+    
 
 
     // testimonial carousel

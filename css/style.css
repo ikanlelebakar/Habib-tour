@@ -262,6 +262,14 @@
     .navbar-light .navbar-brand img {
         max-height: 45px;
     }
+
+    .navbar-light .navbar-brand .logo-light {
+        display: none;
+    }
+
+    .navbar-light .navbar-brand .logo-dark {
+        display: block;
+    }
 }
 
 @media (min-width: 992px) {
@@ -394,7 +402,7 @@
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/breadcrumb-bg.jpg);
+    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/jawa\ 2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1245,3 +1253,17 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+.logo-light {
+  display: block;
+}
+.logo-dark {
+  display: none;
+}
+
+.sticky-top .logo-light {
+  display: none;
+}
+.sticky-top .logo-dark {
+  display: block;
+}
