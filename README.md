@@ -1,5 +1,5 @@
-#HANYA UNTUK PEMBELAJARAN
+#FOR LEARNING PURPOSES ONLY
 
-INI MAKE TEMPLTE DARI WEB THEME WAGON 
+THIS IS A TEMPLATE FROM THE WEB THEME WAGON
 
-Terimakasih yang sudah berperan dalam pembuatan web ini, terutama kepada teman saya Habib karna tanpa nya mungkin web ini tidak akan selesai dalam waktu dekat
+Thank you to everyone who contributed to the creation of this website, especially my friend Habib, because without him this website might not have been completed in such a short time.
